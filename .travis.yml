@@ -1,0 +1,11 @@
+language: generic 
+sudo: required
+services: 
+    - docker
+
+before_install:
+    - docker build -t sidorov/docker-react -f Dockerfile.dev .
+    -      
+
+script:
+    - docker run -e CI=true sidorov/docker-react npm run test

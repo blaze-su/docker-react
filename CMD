@@ -1,3 +1,0 @@
-docker build -f Dockerfile.dev -t sidorov/frontend . 
-docker run -p 3000:3000 -v /app/node_modules -v pwd:/app 
-docker run -p 3000:3000 -v /app/node_modules -v C:/docker/frontend:/app sidorov/frontend
